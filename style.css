@@ -1,0 +1,16 @@
+body {
+  /* background-image: url(/assets/bg-mobile.jpg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; */
+
+
+  background: url(/assets/bg-mobile.jpg.jpg) no-repeat top center/cover; /* Short, configurações do body em uma linha*/
+}
+
+#container {
+  width: 360px;
+  height: 712px;
+
+  border: 1px solid red;
+}
