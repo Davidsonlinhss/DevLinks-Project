@@ -6,7 +6,7 @@
 
 :root {
   --text-color: white;
-  --bg-url:url(assets/bg-mobile.jpg.jpg);
+  --bg-url: url(assets/bg-mobile.jpg.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: 255, 255, 255, 0.05;
@@ -15,7 +15,7 @@
 
 .light {
   --text-color: black;
-  --bg-url:url(assets/bg-mobile-light.jpg.jpg);
+  --bg-url: url(assets/bg-mobile-light.jpg.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -23,7 +23,7 @@
 }
 
 body * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--text-color);
 }
 
@@ -35,34 +35,48 @@ body {
   width: 360px;
   margin: 56px auto 0px;
   padding: 0 24px;
-
 }
 
+/* profile */
 #profile {
   text-align: center;
   padding: 24px;
 }
 
 #profile img {
-  width: 112px;  
+  width: 112px;
 }
 
 #profile p {
-font-weight: 500;
-line-height: 24px;
-margin-top: 8px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
 }
+
+/* switch */
+
+#switch button {
+  height: 32px;
+  width: 32px;
+  background: #ffff url(/assets/moon-starts.svg) no-repeat center;
+  border: 0px;
+  border-radius: 50%;
+  padding: 8px;
+  gap: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.025);
+}
+
 
 /* Links */
 ul {
-  list-style: none; 
+  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 24px 0;
 }
 
-ul li a{
+ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +94,7 @@ ul li a{
 
 /* pseudo-selector  */
 ul li a:hover {
-  background: var(--surface-color-hover) ;
+  background: var(--surface-color-hover);
   border: 1.5px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(4px);
 }
@@ -104,7 +118,7 @@ ul li a:hover {
 }
 
 #social-links a:hover {
-  background: var(--social-link-hover ) ;
+  background: var(--social-link-hover);
 }
 
 /* footer */
@@ -113,5 +127,7 @@ footer {
   text-align: center;
   font-size: 14px;
   font-weight: 400px;
-
 }
+
+/* Butoon */
+
