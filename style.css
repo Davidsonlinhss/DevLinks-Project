@@ -30,7 +30,7 @@ body * {
 }
 
 body {
-  background: var(--bg-url) no-repeat top center cover; /* Short, configurações do body em uma linha*/
+  background: var(--bg-url) no-repeat top center/cover; /* Short, configurações do body em uma linha*/
 }
 
 /* container */
