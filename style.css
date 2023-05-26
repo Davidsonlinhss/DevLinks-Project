@@ -58,7 +58,7 @@ body {
 #switch button {
   height: 32px;
   width: 32px;
-  background: #ffff url(/assets/moon-starts.svg) no-repeat center;
+  background: #ffff url(assets/moon-starts.svg) no-repeat center;
   border: 0px;
   border-radius: 50%;
   padding: 8px;
