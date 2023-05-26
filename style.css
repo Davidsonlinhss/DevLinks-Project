@@ -4,17 +4,31 @@
   box-sizing: border-box;
 }
 
+:root {
+  --text-color: white;
+  --bg-url:url(/assets/bg-mobile.jpg.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --social-link-hover: rgba(255, 255, 255, 0.2);
+}
+
+.light {
+  --text-color: black;
+  --bg-url:url(/assets/bg-mobile-light.jpg.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --social-link-hover: rgba(0, 0, 0, 0.1);
+}
+
 body * {
   font-family: 'Inter', sans-serif;
-  color: #FFFF;
+  color: var(--text-color);
 }
 
 body {
-  /* background-image: url(/assets/bg-mobile.jpg.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover; */
-  background: url(/assets/bg-mobile.jpg.jpg) no-repeat top center/cover; /* Short, configurações do body em uma linha*/
+  background: var(--bg-url) no-repeat top center/cover; /* Short, configurações do body em uma linha*/
 }
 
 #container {
@@ -40,7 +54,6 @@ margin-top: 8px;
 }
 
 /* Links */
-
 ul {
   list-style: none; 
   display: flex;
@@ -50,13 +63,12 @@ ul {
 }
 
 ul li a{
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 16px 24px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
   backdrop-filter: blur(4px); /* Embaçar */
   -webkit-backdrop-filter: blur(4px);
   border-radius: 8px;
@@ -68,7 +80,7 @@ ul li a{
 
 /* pseudo-selector  */
 ul li a:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--surface-color-hover) ;
   border: 1.5px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(4px);
 }
@@ -92,5 +104,14 @@ ul li a:hover {
 }
 
 #social-links a:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--social-link-hover ) ;
+}
+
+/* footer */
+footer {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400px;
+
 }
